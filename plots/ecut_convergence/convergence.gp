@@ -54,14 +54,14 @@ unset label
 unset arrow
 set style increment default
 unset style line
-set style line 1  linetype 2 linecolor rgb "#6c71c4"  linewidth 2.500
+set style line 1  linetype 1 linecolor rgb "#6c71c4"  linewidth 2.500
 set style line 2  linetype 1 linecolor rgb "#859900"  linewidth 2.500
-set style line 3  linetype 2 linecolor rgb "#cb4b16"  linewidth 2.500
-set style line 4  linetype 2 linecolor rgb "#2aa198"  linewidth 2.500
-set style line 5  linetype 2 linecolor rgb "#dc322f"  linewidth 2.500
-set style line 6  linetype 2 linecolor rgb "#268bd2"  linewidth 2.500
-set style line 7  linetype 2 linecolor rgb "#d33682"  linewidth 2.500
-set style line 8  linetype 2 linecolor rgb "#b58900"  linewidth 2.500
+set style line 3  linetype 1 linecolor rgb "#cb4b16"  linewidth 2.500
+set style line 4  linetype 1 linecolor rgb "#2aa198"  linewidth 2.500
+set style line 5  linetype 1 linecolor rgb "#dc322f"  linewidth 2.500
+set style line 6  linetype 1 linecolor rgb "#268bd2"  linewidth 2.500
+set style line 7  linetype 1 linecolor rgb "#d33682"  linewidth 2.500
+set style line 8  linetype 1 linecolor rgb "#b58900"  linewidth 2.500
 unset style arrow
 set style histogram clustered gap 2 title  offset character 0, 0, 0
 unset logscale
@@ -160,15 +160,12 @@ set fontpath
 set psdir
 set fit noerrorvariables
 GNUTERM = "wxt"
-p [2.5:5] "/Users/sma/dev/nrc/results/Rpp_k0145_e10" u (2*$1):2 title "0145" w l ls 1,\
-"/Users/sma/dev/nrc/results/Rpp_k0166_e10" u (2*$1):2 title "0166" w l ls 2,\
-"/Users/sma/dev/nrc/results/Rpp_k0210_e10" u (2*$1):2 title "0210" w l ls 3,\
-"/Users/sma/dev/nrc/results/Rpp_k0235_e10" u (2*$1):2 title "0235" w l ls 4,\
-"/Users/sma/dev/nrc/results/Rpp_k0260_e10" u (2*$1):2 title "0260" w l ls 5,\
-"/Users/sma/dev/nrc/results/Rpp_k0345_e10" u (2*$1):2 title "0345" w l ls 6,\
-"/Users/sma/dev/nrc/results/Rpp_k0514_e10" u (2*$1):2 title "0514" w l ls 7,\
-"/Users/sma/dev/nrc/results/Rpp_k0551_e10" u (2*$1):2 title "0551" w l ls 8,\
-"/Users/sma/dev/nrc/results/Rpp_k0715_e10" u (2*$1):2 title "0715" w l ls 1,\
-"/Users/sma/dev/nrc/results/Rpp_k0760_e10" u (2*$1):2 title "0760" w l ls 2,\
-"/Users/sma/dev/nrc/results/Rpp_k0950_e10" u (2*$1):2 title "0950" w l ls 3 
+p [2.5:5] "/Users/sma/dev/nrc/results/Rss_k0166_e10" u (2*$1):2 title "10" w l ls 1,\
+"/Users/sma/dev/nrc/results/Rss_k0166_e15" u (2*$1):2 title "15" w l ls 2,\
+"/Users/sma/dev/nrc/results/Rss_k0166_e20" u (2*$1):2 title "20" w l ls 3,\
+"/Users/sma/dev/nrc/results/Rss_k0166_e25" u (2*$1):2 title "25" w l ls 4,\
+"/Users/sma/dev/nrc/results/Rss_k0166_e30" u (2*$1):2 title "30" w l ls 5,\
+"/Users/sma/dev/nrc/results/Rss_k0166_e35" u (2*$1):2 title "35" w l ls 6,\
+"/Users/sma/dev/nrc/results/Rss_k0166_e40" u (2*$1):2 title "40" w l ls 7,\
+"/Users/sma/dev/nrc/results/Rss_k0166_e45" u (2*$1):2 title "45" w l ls 8
 #    EOF

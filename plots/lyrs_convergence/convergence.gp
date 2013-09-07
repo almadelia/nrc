@@ -46,7 +46,7 @@ set angles radians
 unset grid
 set raxis
 set key title ""
-set key outside right top vertical Right noreverse enhanced autotitles nobox
+set key inside right top vertical Right noreverse enhanced autotitles nobox
 set key noinvert samplen 4 spacing 1 width 0 height 0 
 set key maxcolumns 0 maxrows 0
 set key noopaque
@@ -105,7 +105,7 @@ set xtics border in scale 1,0.5 mirror norotate  offset character 0, 0, 0 autoju
 set xtics autofreq  norangelimit
 set ytics border in scale 1,0.5 mirror norotate  offset character 0, 0, 0 autojustify
 set ytics autofreq  norangelimit
-unset ytics
+#unset ytics
 set ztics border in scale 1,0.5 nomirror norotate  offset character 0, 0, 0 autojustify
 set ztics autofreq  norangelimit
 set nox2tics
@@ -160,8 +160,9 @@ set fontpath
 set psdir
 set fit noerrorvariables
 GNUTERM = "wxt"
-p [2.5:5] "/Users/sma/dev/nrc/results/12layers/Rss_k0166_e15" u (2*$1):2 title "12" w l ls 1,\
-"/Users/sma/dev/nrc/results/18layers/Rss_k0166_e15" u (2*$1):2 title "18" w l ls 2,\
-"/Users/sma/dev/nrc/results/24layers/Rss_k0166_e15" u (2*$1):2 title "24" w l ls 3,\
-"/Users/sma/dev/nrc/results/30layers/Rss_k0166_e15" u (2*$1):2 title "30" w l ls 4,\
+p [2.5:5] "/Users/sma/dev/nrc/results/12layers/Rpp_k0166_e15" u (2*$1):2 title "12" w l ls 1,\
+"/Users/sma/dev/nrc/results/18layers/Rpp_k0166_e15" u (2*$1):2 title "18" w l ls 2,\
+"/Users/sma/dev/nrc/results/24layers/Rpp_k0166_e15" u (2*$1):2 title "24" w l ls 3,\
+"/Users/sma/dev/nrc/results/30layers/Rpp_k0166_e15" u (2*$1):2 title "30" w l ls 4,\
+"/Users/sma/dev/nrc/results/36layers/Rpp_k0166_e15" u (2*$1):2 title "36" w l ls 4,\
 #    EOF

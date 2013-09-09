@@ -160,9 +160,9 @@ set fontpath
 set psdir
 set fit noerrorvariables
 GNUTERM = "wxt"
-p [2.5:5] "/Users/sma/dev/nrc/results/12layers/Rpp_k0166_e15" u (2*$1):2 title "12" w l ls 1,\
-"/Users/sma/dev/nrc/results/18layers/Rpp_k0166_e15" u (2*$1):2 title "18" w l ls 2,\
-"/Users/sma/dev/nrc/results/24layers/Rpp_k0166_e15" u (2*$1):2 title "24" w l ls 3,\
-"/Users/sma/dev/nrc/results/30layers/Rpp_k0166_e15" u (2*$1):2 title "30" w l ls 4,\
-"/Users/sma/dev/nrc/results/36layers/Rpp_k0166_e15" u (2*$1):2 title "36" w l ls 4,\
+p [2.5:5] "/Users/sma/dev/nrc/results/12layers/Rpp_k0210_e15" u (2*$1):2 title "12" w l ls 1,\
+"/Users/sma/dev/nrc/results/18layers/Rpp_k0210_e15" u (2*$1):2 title "18" w l ls 2,\
+"/Users/sma/dev/nrc/results/24layers/Rpp_k0210_e15" u (2*$1):2 title "24" w l ls 3,\
+"/Users/sma/dev/nrc/results/30layers/Rpp_k0210_e15" u (2*$1):2 title "30" w l ls 4,\
+"/Users/sma/dev/nrc/results/36layers/Rpp_k0210_e15" u (2*$1):2 title "36" w l ls 4,\
 #    EOF

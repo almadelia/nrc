@@ -54,7 +54,7 @@ unset label
 unset arrow
 set style increment default
 unset style line
-set style line 1  linetype 1 linecolor rgb "#6c71c4"  linewidth 2.500
+set style line 1  linetype 2 linecolor rgb "#6c71c4"  linewidth 2.500
 set style line 2  linetype 1 linecolor rgb "#859900"  linewidth 2.500
 set style line 3  linetype 1 linecolor rgb "#cb4b16"  linewidth 2.500
 set style line 4  linetype 1 linecolor rgb "#2aa198"  linewidth 2.500
@@ -114,7 +114,7 @@ set cbtics border in scale 1,0.5 mirror norotate  offset character 0, 0, 0 autoj
 set cbtics autofreq  norangelimit
 set rtics axis in scale 1,0.5 nomirror norotate  offset character 0, 0, 0 autojustify
 set rtics autofreq  norangelimit
-set title "" 
+set title "Rpp signal scaling for number of layers, $\\Delta = 0.83808$" 
 set title  offset character 0, 0, 0 font "" norotate
 set timestamp bottom 
 set timestamp "" 
@@ -133,7 +133,7 @@ set ylabel ""
 set ylabel  offset character 0, 0, 0 font "" textcolor lt -1 rotate by -270
 set y2label "" 
 set y2label  offset character 0, 0, 0 font "" textcolor lt -1 rotate by -270
-set yrange [ * : * ] noreverse nowriteback
+set yrange [ 0 : 3e10 ] noreverse nowriteback
 set y2range [ * : * ] noreverse nowriteback
 set zlabel "" 
 set zlabel  offset character 0, 0, 0 font "" textcolor lt -1 norotate
@@ -164,5 +164,5 @@ p [2.5:5] "/Users/sma/dev/nrc/results/12layers/Rpp_k0210_e15" u (2*$1):2 title "
 "/Users/sma/dev/nrc/results/18layers/Rpp_k0210_e15" u (2*$1):2 title "18" w l ls 2,\
 "/Users/sma/dev/nrc/results/24layers/Rpp_k0210_e15" u (2*$1):2 title "24" w l ls 3,\
 "/Users/sma/dev/nrc/results/30layers/Rpp_k0210_e15" u (2*$1):2 title "30" w l ls 4,\
-"/Users/sma/dev/nrc/results/36layers/Rpp_k0210_e15" u (2*$1):2 title "36" w l ls 4,\
+"/Users/sma/dev/nrc/results/36layers/Rpp_k0210_e15" u (2*$1):2 title "36" w l ls 6,\
 #    EOF

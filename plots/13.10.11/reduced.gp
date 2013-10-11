@@ -54,7 +54,6 @@ set key inside left top vertical Right noreverse enhanced autotitles nobox
 set key noinvert samplen 4 spacing 1 width 0 height 0 
 set key maxcolumns 0 maxrows 0
 set key noopaque
-unset key
 unset label
 unset arrow
 set style increment default
@@ -119,10 +118,7 @@ set cbtics autofreq  norangelimit
 set rtics axis in scale 1,0.5 nomirror norotate  offset character 0, 0, 0 autojustify
 set rtics autofreq  norangelimit
 #set title "R$_{pp}$ for 12 layers: 950 kpoints, 15 Hartrees, $\\Delta = 1.8679$" 
-#set title "R$_{pp}$ for 18 layers: 950 kpoints, 15 Hartrees, $\\Delta = 1.91908$" 
-#set title "R$_{pp}$ for 24 layers: 950 kpoints, 15 Hartrees, $\\Delta = 1.94138$" 
-set title "R$_{pp}$ for 30 layers: 950 kpoints, 15 Hartrees, $\\Delta = 1.95309$" 
-#set title "R$_{pp}$ for different layer sets: 950 kpoints, 15 Hartrees" 
+set title "R$_{pp}$ for 18 layers: 950 kpoints, 15 Hartrees, $\\Delta = 1.91908$" 
 set title  offset character 0, 0, 0 font "" norotate
 set timestamp bottom 
 set timestamp "" 
@@ -168,8 +164,6 @@ set fontpath
 set psdir
 set fit noerrorvariables
 GNUTERM = "wxt"
-#p [3:6.1] "/Users/sma/dev/nrc/results/12_Rpp_k0950_e15" u (2*$1):2 title "12" w l ls 1
-#p [2.5:5] "/Users/sma/dev/nrc/results/18_Rpp_k0950_e15" u (2*$1):2 title "18" w l ls 2
-#p [2.5:5.4] "/Users/sma/dev/nrc/results/24_Rpp_k0950_e15" u (2*$1):2 title "24" w l ls 3
-p [2.5:5.1] "/Users/sma/dev/nrc/results/30_Rpp_k0950_e15" u (2*$1):2 title "30" w l ls 4
+#p [3.5:6.1] "/Users/sma/dev/nrc/results/12_Rpp_k0950_e15_13" u (2*$1):2 title "$N_{c} = 13$" w l ls 3, "/Users/sma/dev/nrc/results/12_Rpp_k0950_e15_27" u (2*$1):2 title "$N_{c} = 27$" w l ls 1
+p [2.5:5] "/Users/sma/dev/nrc/results/18_Rpp_k0950_e15_19" u (2*$1):2 title "$N_{c} = 19$" w l ls 6, "/Users/sma/dev/nrc/results/18_Rpp_k0950_e15_39" u (2*$1):2 title "$N_{c} = 39$" w l ls 2
 #    EOF

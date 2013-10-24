@@ -59,8 +59,8 @@ unset label
 unset arrow
 set style increment default
 unset style line
-set style line 1  linetype 1 linecolor rgb "#6c71c4"  linewidth 2.500
-set style line 2  linetype 1 linecolor rgb "#859900"  linewidth 2.500
+set style line 1  linetype 5 linecolor rgb "#6c71c4"  linewidth 2.500
+set style line 2  linetype 5 linecolor rgb "#859900"  linewidth 2.500
 set style line 3  linetype 1 linecolor rgb "#cb4b16"  linewidth 2.500
 set style line 4  linetype 1 linecolor rgb "#2aa198"  linewidth 2.500
 set style line 5  linetype 1 linecolor rgb "#dc322f"  linewidth 2.500
@@ -164,15 +164,15 @@ set fontpath
 set psdir
 set fit noerrorvariables
 GNUTERM = "wxt"
-p [3.5:6.2] "/Users/sma/dev/nrc/results/12_Rpp_k0950_e15_25" u (2*$1):2 title "$N_{c} = 25$" w l,\
-"/Users/sma/dev/nrc/results/12_Rpp_k0950_e15_30" u (2*$1):2 title "$N_{c} = 30$" w l,\
-"/Users/sma/dev/nrc/results/12_Rpp_k0950_e15_35" u (2*$1):2 title "$N_{c} = 35$" w l,\
-"/Users/sma/dev/nrc/results/12_Rpp_k0950_e15_40" u (2*$1):2 title "$N_{c} = 40$" w l,\
-"/Users/sma/dev/nrc/results/12_Rpp_k0950_e15_45" u (2*$1):2 title "$N_{c} = 45$" w l,\
-"/Users/sma/dev/nrc/results/12_Rpp_k0950_e15_50" u (2*$1):2 title "$N_{c} = 50$" w l,\
-"/Users/sma/dev/nrc/results/12_Rpp_k0950_e15_55" u (2*$1):2 title "$N_{c} = 55$" w l,\
-"/Users/sma/dev/nrc/results/12_Rpp_k0950_e15_60" u (2*$1):2 title "$N_{c} = 60$" w l,\
-"/Users/sma/dev/nrc/results/12_Rpp_k0950_e15_65" u (2*$1):2 title "$N_{c} = 65$" w l,\
-"/Users/sma/dev/nrc/results/12_Rpp_k0950_e15_70" u (2*$1):2 title "$N_{c} = 70$" w l,\
-"/Users/sma/dev/nrc/results/12_Rpp_k0950_e15_75" u (2*$1):2 title "$N_{c} = 75$" w l,\
+p [3.5:6.2] "/Users/sma/dev/nrc/results/12_Rpp_k0950_e15_25" u (2*$1):2 title "$N_{c} = 25$" w l ls 1,\
+"/Users/sma/dev/nrc/results/12_Rpp_k0950_e15_30" u (2*$1):2 title "$N_{c} = 30$" w l ls 2,\
+"/Users/sma/dev/nrc/results/12_Rpp_k0950_e15_35" u (2*$1):2 title "$N_{c} = 35$" w l ls 3,\
+"/Users/sma/dev/nrc/results/12_Rpp_k0950_e15_40" u (2*$1):2 title "$N_{c} = 40$" w l ls 4,\
+"/Users/sma/dev/nrc/results/12_Rpp_k0950_e15_45" u (2*$1):2 title "$N_{c} = 45$" w l ls 5,\
+"/Users/sma/dev/nrc/results/12_Rpp_k0950_e15_50" u (2*$1):2 title "$N_{c} = 50$" w l ls 6,\
+"/Users/sma/dev/nrc/results/12_Rpp_k0950_e15_55" u (2*$1):2 title "$N_{c} = 55$" w l ls 7,\
+"/Users/sma/dev/nrc/results/12_Rpp_k0950_e15_60" u (2*$1):2 title "$N_{c} = 60$" w l ls 8,\
+"/Users/sma/dev/nrc/results/12_Rpp_k0950_e15_65" u (2*$1):2 title "$N_{c} = 65$" w l ls 3,\
+"/Users/sma/dev/nrc/results/12_Rpp_k0950_e15_70" u (2*$1):2 title "$N_{c} = 70$" w l ls 4,\
+"/Users/sma/dev/nrc/results/12_Rpp_k0950_e15_75" u (2*$1):2 title "$N_{c} = 75$" w l ls 5,\
 #    EOF

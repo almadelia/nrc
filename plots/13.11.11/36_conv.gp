@@ -17,7 +17,7 @@ set terminal epslatex   standalone leveldefault color blacktext \
    palfuncparam 2000,0.003 \
    noheader "" 11  fontscale 1.0 
 #set terminal pdfcairo
-set output '30_conv.tex'
+set output '36_conv.tex'
 unset clip points
 set clip one
 unset clip two
@@ -118,7 +118,7 @@ set cbtics border in scale 1,0.5 mirror norotate  offset character 0, 0, 0 autoj
 set cbtics autofreq  norangelimit
 set rtics axis in scale 1,0.5 nomirror norotate  offset character 0, 0, 0 autojustify
 set rtics autofreq  norangelimit
-set title "R$_{pp}$ for 30 layers: 950 kpoints, 15 Hartrees, $\\Delta = 1.95309$" 
+set title "R$_{pp}$ for 36 layers: 950 kpoints, 15 Hartrees, $\\Delta = 1.96003$" 
 set title  offset character 0, 0, 0 font "" norotate
 set timestamp bottom 
 set timestamp "" 
@@ -164,13 +164,12 @@ set fontpath
 set psdir
 set fit noerrorvariables
 GNUTERM = "wxt"
-p [2.5:5.2] "/Users/sma/dev/nrc/results/30_Rpp_k0950_e15_25" u (2*$1):2 title "25" w l ls 1,\
-"/Users/sma/dev/nrc/results/30_Rpp_k0950_e15_30" u (2*$1):2 title "30" w l ls 2,\
-"/Users/sma/dev/nrc/results/30_Rpp_k0950_e15_35" u (2*$1):2 title "35" w l ls 3,\
-"/Users/sma/dev/nrc/results/30_Rpp_k0950_e15_40" u (2*$1):2 title "40" w l ls 4,\
-"/Users/sma/dev/nrc/results/30_Rpp_k0950_e15_45" u (2*$1):2 title "45" w l ls 5,\
-"/Users/sma/dev/nrc/results/30_Rpp_k0950_e15_50" u (2*$1):2 title "50" w l ls 6,\
-"/Users/sma/dev/nrc/results/30_Rpp_k0950_e15_55" u (2*$1):2 title "55" w l ls 7,\
-"/Users/sma/dev/nrc/results/30_Rpp_k0950_e15_60" u (2*$1):2 title "60" w l ls 8,\
-"/Users/sma/dev/nrc/results/30_Rpp_k0950_e15_63" u (2*$1):2 title "63" w l ls 8,\
+p [3:5.4] "/Users/sma/dev/nrc/results/36_Rpp_k0950_e15_40" u (2*$1):2 title "40" w l ls 3,\
+"/Users/sma/dev/nrc/results/36_Rpp_k0950_e15_45" u (2*$1):2 title "45" w l ls 4,\
+"/Users/sma/dev/nrc/results/36_Rpp_k0950_e15_50" u (2*$1):2 title "50" w l ls 5,\
+"/Users/sma/dev/nrc/results/36_Rpp_k0950_e15_55" u (2*$1):2 title "55" w l ls 6,\
+"/Users/sma/dev/nrc/results/36_Rpp_k0950_e15_60" u (2*$1):2 title "60" w l ls 7,\
+"/Users/sma/dev/nrc/results/36_Rpp_k0950_e15_65" u (2*$1):2 title "65" w l ls 8,\
+"/Users/sma/dev/nrc/results/36_Rpp_k0950_e15_70" u (2*$1):2 title "70" w l ls 8,\
+"/Users/sma/dev/nrc/results/36_Rpp_k0950_e15_75" u (2*$1):2 title "75" w l ls 8,\
 #    EOF

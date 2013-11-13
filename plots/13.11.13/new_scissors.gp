@@ -17,7 +17,7 @@ set terminal epslatex   standalone leveldefault color blacktext \
    palfuncparam 2000,0.003 \
    noheader "" 11  fontscale 1.0 
 #set terminal pdfcairo
-set output 'chi1.tex'
+set output 'new_scissors.tex'
 unset clip points
 set clip one
 unset clip two
@@ -50,8 +50,8 @@ set format r "% g"
 set angles radians
 unset grid
 set raxis
-set key title ""
-set key inside right top vertical Right noreverse enhanced autotitles nobox
+set key title "Layers"
+set key inside left top vertical Right noreverse enhanced autotitles nobox
 set key noinvert samplen 4 spacing 1 width 0 height 0 
 set key maxcolumns 0 maxrows 0
 set key noopaque
@@ -118,7 +118,7 @@ set cbtics border in scale 1,0.5 mirror norotate  offset character 0, 0, 0 autoj
 set cbtics autofreq  norangelimit
 set rtics axis in scale 1,0.5 nomirror norotate  offset character 0, 0, 0 autojustify
 set rtics autofreq  norangelimit
-set title "Linear response, no scissors" 
+set title "R$_{pp}$: 950 kpoints, 15 Hartrees, $N_{c} = 50$, $\\Delta = 0.83808$" 
 set title  offset character 0, 0, 0 font "" norotate
 set timestamp bottom 
 set timestamp "" 
@@ -164,10 +164,9 @@ set fontpath
 set psdir
 set fit noerrorvariables
 GNUTERM = "wxt"
-p [0:10] "/Users/sma/dev/nrc/responses/bulk_chi1/chi1.sm_xx_yy_zz_3107_25-nospin_scissor_0_Nc_26" u 1:3 title "bulk" w l ls 1,\
-"/Users/sma/dev/nrc/responses/12layers/chi1.sm_xx_yy_zz_950_15-nospin_scissor_0_Nc_50" u 1:3 title "12" w l ls 2,\
-"/Users/sma/dev/nrc/responses/18layers/chi1.sm_xx_yy_zz_950_15-nospin_scissor_0_Nc_50" u 1:3 title "18" w l ls 3,\
-"/Users/sma/dev/nrc/responses/24layers/chi1.sm_xx_yy_zz_950_15-nospin_scissor_0_Nc_50" u 1:3 title "24" w l ls 4,\
-"/Users/sma/dev/nrc/responses/30layers/chi1.sm_xx_yy_zz_950_15-nospin_scissor_0_Nc_50" u 1:3 title "30" w l ls 5,\
-"/Users/sma/dev/nrc/responses/36layers/chi1.sm_xx_yy_zz_950_15-nospin_scissor_0_Nc_50" u 1:3 title "36" w l ls 6,\
+p [2.5:6] "/Users/sma/dev/nrc/results/12_Rpp_k0950_e15_0.83808_50" u (2*$1):2 title "12" w l ls 1,\
+"/Users/sma/dev/nrc/results/18_Rpp_k0950_e15_0.83808_50" u (2*$1):2 title "18" w l ls 2,\
+"/Users/sma/dev/nrc/results/24_Rpp_k0950_e15_0.83808_50" u (2*$1):2 title "24" w l ls 3,\
+"/Users/sma/dev/nrc/results/30_Rpp_k0950_e15_0.83808_50" u (2*$1):2 title "30" w l ls 4,\
+"/Users/sma/dev/nrc/results/36_Rpp_k0950_e15_0.83808_50" u (2*$1):2 title "36" w l ls 5,\
 #    EOF

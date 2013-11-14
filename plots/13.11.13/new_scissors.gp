@@ -164,9 +164,6 @@ set fontpath
 set psdir
 set fit noerrorvariables
 GNUTERM = "wxt"
-p [2.5:6] "/Users/sma/dev/nrc/results/12_Rpp_k0950_e15_0.83808_50" u (2*$1):2 title "12" w l ls 1,\
-"/Users/sma/dev/nrc/results/18_Rpp_k0950_e15_0.83808_50" u (2*$1):2 title "18" w l ls 2,\
-"/Users/sma/dev/nrc/results/24_Rpp_k0950_e15_0.83808_50" u (2*$1):2 title "24" w l ls 3,\
-"/Users/sma/dev/nrc/results/30_Rpp_k0950_e15_0.83808_50" u (2*$1):2 title "30" w l ls 4,\
+p [2.5:6] "/Users/sma/dev/nrc/results/30_Rpp_k0950_e15_0.83808_50" u (2*$1):2 title "30" w l ls 4,\
 "/Users/sma/dev/nrc/results/36_Rpp_k0950_e15_0.83808_50" u (2*$1):2 title "36" w l ls 5,\
 #    EOF

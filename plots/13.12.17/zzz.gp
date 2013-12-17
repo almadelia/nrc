@@ -16,8 +16,7 @@ set terminal epslatex   standalone leveldefault color blacktext \
    nobackground \
    palfuncparam 2000,0.003 \
    noheader "" 11  fontscale 1.0 
-#set terminal pdfcairo
-set output 'intra_inter.tex'
+set output 'zzz.tex'
 unset clip points
 set clip one
 unset clip two
@@ -164,5 +163,5 @@ set fontpath
 set psdir
 set fit noerrorvariables
 GNUTERM = "wxt"
-"/Users/sma/Developer/nrc/plots/13.12.17/12_inter/shgC.sm_xxx_950_half-slab_15-nospin_scissor_0.83808_Nc_50" u (2*$1):2 title "30" w l ls 1,\
+p "/Users/sma/Developer/nrc/plots/13.12.17/12_inter/shgC.sm_xxx_950_half-slab_15-nospin_scissor_0.83808_Nc_50" u 1:2 title "12 layers" w l ls 1,\
 #    EOF

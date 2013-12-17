@@ -16,7 +16,7 @@ set terminal epslatex   standalone leveldefault color blacktext \
    nobackground \
    palfuncparam 2000,0.003 \
    noheader "" 11  fontscale 1.0 
-set output 'zxx.tex'
+set output 'zxx_12_1w.tex'
 unset clip points
 set clip one
 unset clip two
@@ -49,8 +49,8 @@ set format r "% g"
 set angles radians
 unset grid
 set raxis
-set key title "Layers"
-set key inside left top vertical Right noreverse enhanced autotitles nobox
+set key title ""
+set key inside right top vertical Right noreverse enhanced autotitles nobox
 set key noinvert samplen 4 spacing 1 width 0 height 0 
 set key maxcolumns 0 maxrows 0
 set key noopaque
@@ -60,7 +60,7 @@ set style increment default
 unset style line
 set style line 1  linetype 1 linecolor rgb "#6c71c4"  linewidth 2.500
 set style line 2  linetype 1 linecolor rgb "#859900"  linewidth 2.500
-set style line 3  linetype 1 linecolor rgb "#cb4b16"  linewidth 2.500
+set style line 3  linetype 5 linecolor rgb "#cb4b16"  linewidth 2.500
 set style line 4  linetype 1 linecolor rgb "#2aa198"  linewidth 2.500
 set style line 5  linetype 1 linecolor rgb "#dc322f"  linewidth 2.500
 set style line 6  linetype 1 linecolor rgb "#268bd2"  linewidth 2.500
@@ -117,7 +117,7 @@ set cbtics border in scale 1,0.5 mirror norotate  offset character 0, 0, 0 autoj
 set cbtics autofreq  norangelimit
 set rtics axis in scale 1,0.5 nomirror norotate  offset character 0, 0, 0 autojustify
 set rtics autofreq  norangelimit
-set title "R$_{pp}$: 950 kpoints, 15 Hartrees, $N_{c} = 50$, $\\Delta = 0.83808$" 
+set title "Im$[\\chi^{zxx}_{\\omega}]$ \@ 12 layers: $\\Delta = 0.83808$"
 set title  offset character 0, 0, 0 font "" norotate
 set timestamp bottom 
 set timestamp "" 
@@ -162,6 +162,8 @@ set loadpath
 set fontpath 
 set psdir
 set fit noerrorvariables
-GNUTERM = "wxt"
-p "/Users/sma/Developer/nrc/plots/13.12.17/12_inter/shgC.sm_xxx_950_half-slab_15-nospin_scissor_0.83808_Nc_50" u 1:2 title "12 layers" w l ls 1,\
+#GNUTERM = "wxt"
+p "/Users/sma/Developer/nrc/plots/13.12.17/12/both/shgC.sm_zxx_950_half-slab_15-nospin_scissor_0.83808_Nc_50" u 1:3 title "combined" w l ls 1,\
+  "/Users/sma/Developer/nrc/plots/13.12.17/12/inter/shgC.sm_zxx_950_half-slab_15-nospin_scissor_0.83808_Nc_50" u 1:3 title "interband" w l ls 2,\
+  "/Users/sma/Developer/nrc/plots/13.12.17/12/intra/shgC.sm_zxx_950_half-slab_15-nospin_scissor_0.83808_Nc_50" u 1:3 title "intraband" w l ls 3
 #    EOF

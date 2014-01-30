@@ -14,11 +14,11 @@ from numpy import loadtxt, savetxt, column_stack, absolute, \
                   sqrt, linspace, ones, complex128
 
 ########### user input ###########
-LAYERS = sys.argv[1] # reads layers from command line
+#LAYERS = sys.argv[1] # reads layers from command line
 #KPOINTS = sys.argv[1] # reads kpoints from command line
 #ECUT = sys.argv[1] # reads ecut from command line
 #COND = sys.argv[1] # reads N_c from command line
-#LAYERS = 12
+LAYERS = 12
 KPOINTS = 950
 ECUT = 15
 COND = 50
